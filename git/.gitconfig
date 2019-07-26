@@ -1,19 +1,21 @@
 [user]
-	name = Jack Cheng 
-	email = jack.yuncc@gmail
+    name = Jack Cheng
+    email = jack@tomofun.com
 [push]
     default = matching
 [core]
     editor = vim
 [credential]
-	helper = cache
+    helper = cache
 [alias]
-    aa = add --all
+    aa = add -A
+    cb = checkout -b
+    st = status --short --branch
+    un = reset --hard HEAD
     bv = branch -vv
     ba = branch -ra
     bd = branch -d
     ca = commit --amend
-    cb = checkout -b
     cm = commit -a --amend -C HEAD
     ci = commit -a -v
     co = checkout
@@ -22,16 +24,13 @@
     ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%C(cyan)\\ [%cn]" --decorate --date=relative
 	lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
     mm = merge --no-ff
-    st = status --short --branch
     tg = tag -a 
     pu = push --tags
-    un = reset --hard HEAD  
-    uh = reset --hard HEAD^
 [color]
 	ui = auto
-    diff = auto  
-    status = auto  
-    branch = auto 
+    diff = auto
+    status = auto
+    branch = auto
 [diff]
 	tool = vimdiff
 [difftool]
